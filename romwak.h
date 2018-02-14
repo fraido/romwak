@@ -1,7 +1,9 @@
 /* the extremely awkward things one has to do in ANSI C ;) */
+/*
 typedef int bool;
 #define false	0
 #define true	1
+*/
 
 /* romwak function prototypes */
 

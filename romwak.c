@@ -10,7 +10,7 @@
 
 #include "romwak.h"
 
-#define ROMWAK_VERSION	"0.3c" /* derived from 0.3 source code; see above note */
+#define ROMWAK_VERSION	"0.3f" /* derived from 0.3 source code; see above note */
 
 /* Usage() - Print program usage. */
 void Usage(){
@@ -27,7 +27,7 @@ void Usage(){
 	printf("NOTE: Omission of [outfile2] will result in the second file not being saved.\n");
 	printf("\n");
 	printf("See the included README.md for more details. If README.md was not included,\n");
-	printf("please visit https://github.com/freem/romwak/\n");
+  printf("[ https://www.arcadefraidi.com - https://github.com/fraido/romwak ]\n");
 }
 /*----------------------------------------------------------------------------*/
 
@@ -632,7 +632,7 @@ int SwapHalf(char *fileIn, char *fileOut){
 		exit(EXIT_FAILURE);
 	}
 
-	close(pInFile);
+	fclose(pInFile);
 
 	/* create new file from buffers written in reverse order */
 	pOutFile = fopen(fileOut,"wb");
@@ -746,7 +746,7 @@ int PadFile(char *fileIn, char *fileOut, char *padSize, char *padByte){
 
 /* ye olde main */
 int main(int argc, char* argv[]){
-	printf("ROMWak %s - original version by Jeff Kurtz / ANSI C port by freem\n",ROMWAK_VERSION);
+	printf("\nROMWak %s - by Jeff Kurtz / ANSI C port by freem / FraidoFix Version\n",ROMWAK_VERSION);
 	if(argc < 2){
 		Usage();
 		return EXIT_FAILURE; /* failure to run due to no options */
