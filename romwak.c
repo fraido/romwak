@@ -26,8 +26,8 @@ void Usage(){
 	printf("\n");
 	printf("NOTE: Omission of [outfile2] will result in the second file not being saved.\n");
 	printf("\n");
-	printf("See the included README.md for more details. If README.md was not included,\n");
-  printf("[ https://www.arcadefraidi.com - https://github.com/fraido/romwak ]\n");
+	printf("For more details please visit:\n");
+  printf("https://github.com/fraido/romwak - https://www.arcadefraidi.com\n");
 }
 /*----------------------------------------------------------------------------*/
 
